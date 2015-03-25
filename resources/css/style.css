@@ -1,0 +1,192 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 16, 2015, 5:35:46 PM
+    Author     : Dennis
+*/
+
+/* Animations */
+@-webkit-keyframes wave {
+    30%{}
+    40%{transform: rotateZ(-175deg);}
+    50%{transform: rotateZ(-155deg);}
+    60%{transform: rotateZ(-175deg);}
+    70%{transform: rotateZ(-155deg);}
+    80%{transform: rotateZ(-175deg);}
+    100%{}
+    
+}
+
+/* Header Style */
+
+header {
+    position: relative;
+    /*overflow: auto;*/
+    height: 350px;
+    /*border: 1px solid black;*/
+    /*background-color: blue;*/
+    /*background-image: url(../resources/images/room.png);*/
+}
+
+#character {
+    position: absolute;
+    height: 175px;
+    width: 128px;
+    left: 45%;
+    top: 120px;
+   /* background-color: orange;*/
+}
+
+
+
+#character:hover #arm-right {
+    
+    
+}
+
+#head {
+    position: absolute;
+    background-color: #ffe0bd;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    left: 30%;
+    top: 25px;
+}
+
+#eye-left, #eye-right {
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+    height: 10px;
+    width: 5px
+}
+
+#eye-left {
+    top: 12px;
+    left: 15px;
+}
+
+#eye-right {
+    top: 12px;
+    left: 35px;
+}
+
+#mouth {
+    position: absolute;
+   height: 10px;
+    width: 20px;
+    border-radius: 0 0 90px 90px;
+    top: 30px;
+    left: 17px;
+    background-color: black;
+}
+
+
+#torso {
+	position: absolute;
+	top: 80px;
+	left: 23%;
+	height: 72px;
+	width: 72px;
+	/*background-color: white;*/
+        background-image: -webkit-linear-gradient(bottom, black 50%, #FF3333 50%);
+	border-radius: 50px;
+}
+
+#arm-left , #arm-right{
+	position: absolute;
+	height: 40px;
+	width: 10px;
+	background-color: #ffe0bd;
+	border-radius: 50%;
+	top: 95px;
+        
+}
+
+#arm-left {
+	
+	left: 12%;
+}
+
+#arm-right{
+        
+        transform-origin: 0% 0%;
+        right: 11%;
+        -webkit-animation-name: wave;
+        -webkit-animation-duration: 3s;
+	-webkit-animation-timing-function: linear;
+}
+
+#left-leg, #right-leg {
+	position: absolute;
+	height: 20px;
+	width: 25px;
+	background-color: brown;
+	border-radius: 100px 100px 0 0;
+	top: 155px;
+}
+
+#left-leg {
+	
+	left: 25%;
+}
+
+#right-leg {
+	right: 25%;
+}
+
+
+nav {
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    top: 300px;
+    background-color: #333
+}
+
+ul {
+    width: 100%;
+    max-height: 50px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+nav li {
+	display: inline-block;
+	height: 50px;
+	width: 25%
+		
+}
+
+nav a {
+	
+	display: inline-block;
+	height: 35px;
+	width: 100%;
+	color: white;
+	text-decoration: none;
+	border-radius: 7px;
+	padding-top: 15px;
+	font-size: 150%;
+	
+	
+}
+
+nav a:hover {
+	background-color: #5C5C5C
+}
+
+/* Main content Style */
+
+
+/*****TESTING*****/
+#test{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+}
