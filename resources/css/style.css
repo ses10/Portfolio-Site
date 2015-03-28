@@ -1,11 +1,8 @@
 /*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
+
 /* 
     Created on : Mar 16, 2015, 5:35:46 PM
-    Author     : Dennis
+    Author     : Dennis Sesma
 */
 
 /* Animations */
@@ -16,19 +13,14 @@ and open the template in the editor.
     60%{transform: rotateZ(-175deg);}
     70%{transform: rotateZ(-155deg);}
     80%{transform: rotateZ(-175deg);}
-    100%{}
-    
+    100%{}    
 }
 
 /* Header Style */
 
 header {
     position: relative;
-    /*overflow: auto;*/
     height: 350px;
-    /*border: 1px solid black;*/
-    /*background-color: blue;*/
-    /*background-image: url(../resources/images/room.png);*/
 }
 
 #character {
@@ -37,14 +29,6 @@ header {
     width: 128px;
     left: 45%;
     top: 120px;
-   /* background-color: orange;*/
-}
-
-
-
-#character:hover #arm-right {
-    
-    
 }
 
 #head {
@@ -85,14 +69,12 @@ header {
     background-color: black;
 }
 
-
 #torso {
 	position: absolute;
 	top: 80px;
 	left: 23%;
 	height: 72px;
 	width: 72px;
-	/*background-color: white;*/
         background-image: -webkit-linear-gradient(bottom, black 50%, #FF3333 50%);
 	border-radius: 50px;
 }
@@ -108,7 +90,6 @@ header {
 }
 
 #arm-left {
-	
 	left: 12%;
 }
 
@@ -139,7 +120,7 @@ header {
 	right: 25%;
 }
 
-
+/*Navigation Bar Style*/
 nav {
     position: absolute;
     height: 50px;
@@ -159,8 +140,7 @@ ul {
 nav li {
 	display: inline-block;
 	height: 50px;
-	width: 25%
-		
+	width: 25%		
 }
 
 nav a {
@@ -172,9 +152,7 @@ nav a {
 	text-decoration: none;
 	border-radius: 7px;
 	padding-top: 15px;
-	font-size: 150%;
-	
-	
+	font-size: 150%;		
 }
 
 nav a:hover {
@@ -184,9 +162,13 @@ nav a:hover {
 /* Main content Style */
 
 
-/*****TESTING*****/
-#test{
-    height: 100px;
+
+/*Styling for speech bubble*/
+#bubble{
+    position: absolute;
     width: 100px;
-    background-color: green;
+    text-align: center;
+    top: 15%;
+    left: 45%;
 }
+  
