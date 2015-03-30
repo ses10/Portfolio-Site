@@ -16,11 +16,18 @@
     100%{}    
 }
 
+html,body{
+ position: absolute;
+ min-height: 100%;
+ min-width: 100%;
+}
+
 /* Header Style */
 
 header {
     position: relative;
     height: 350px;
+    background-image: url(../images/room1.gif);
 }
 
 #character {
@@ -160,7 +167,11 @@ nav a:hover {
 }
 
 /* Main content Style */
-
+section{
+    
+    
+    /*height: 300px;*/
+}
 
 
 /*Styling for speech bubble*/
