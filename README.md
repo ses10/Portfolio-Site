@@ -2,4 +2,4 @@
 Website Displaying Web Development Projects
 
 Github Preview
-http://rawgit.com/ses/Portfolio-Site/master/index.html
+http://rawgit.com/ses10/Portfolio-Site/master/index.html
