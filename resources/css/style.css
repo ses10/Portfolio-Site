@@ -1,11 +1,14 @@
 /*
-
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
 /* 
-    Created on : Mar 16, 2015, 5:35:46 PM
-    Author     : Dennis Sesma
+    Created on : Mar 30, 2015, 1:36:58 PM
+    Author     : Dennis
 */
 
-/* Animations */
+/**Animations*/
 @-webkit-keyframes wave {
     30%{}
     40%{transform: rotateZ(-175deg);}
@@ -16,29 +19,48 @@
     100%{}    
 }
 
-html,body{
- position: absolute;
- min-height: 100%;
- min-width: 100%;
+
+/**RESET*/
+html, body {
+    height: 100%;
+    background-color: #EBEBEB
+    
 }
 
-/* Header Style */
-
-header {
+.main-container{
     position: relative;
-    height: 350px;
-    background-image: url(../images/room1.gif);
+    height: 100%;
+    margin: 0 auto;
+    width: 960px;   
 }
 
-#character {
-    position: absolute;
+header, section{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+/**Header*/
+header{
+    height: 350px;
+}
+    /**Banner*/
+.banner{
+    height: 300px; 
+    background-image: url(../images/room1.png)
+    
+} 
+
+    /**Character*/
+#character{
+    position: relative;
     height: 175px;
-    width: 128px;
-    left: 45%;
+    width: 140px;
+    margin: 0 auto;
     top: 120px;
 }
 
-#head {
+#head{
     position: absolute;
     background-color: #ffe0bd;
     border-radius: 50%;
@@ -79,7 +101,7 @@ header {
 #torso {
 	position: absolute;
 	top: 80px;
-	left: 23%;
+	left: 24%;
 	height: 72px;
 	width: 72px;
         background-image: -webkit-linear-gradient(bottom, black 50%, #FF3333 50%);
@@ -95,7 +117,6 @@ header {
 	top: 95px;
         
 }
-
 #arm-left {
 	left: 12%;
 }
@@ -103,7 +124,7 @@ header {
 #arm-right{
         
         transform-origin: 0% 0%;
-        right: 11%;
+        right: 13%;
         -webkit-animation-name: wave;
         -webkit-animation-duration: 3s;
 	-webkit-animation-timing-function: linear;
@@ -127,59 +148,52 @@ header {
 	right: 25%;
 }
 
-/*Navigation Bar Style*/
-nav {
-    position: absolute;
+    /**NAVBAR*/
+nav{
     height: 50px;
-    width: 100%;
-    top: 300px;
-    background-color: #333
+    background-color: #333;
 }
 
-ul {
-    width: 100%;
-    max-height: 50px;
-    text-align: center;
-    margin: 0 auto;
+nav li, nav a{
+    display: inline-block;
+    height: 50px;
+    width: 310.5px;
+    
 }
 
+nav li:hover{
+    background-color: #5C5C5C
+}
+
+nav ul{
+    
+}
 
 nav li {
-	display: inline-block;
-	height: 50px;
-	width: 25%		
+    border-radius: 5px;
 }
 
-nav a {
-	
-	display: inline-block;
-	height: 35px;
-	width: 100%;
-	color: white;
-	text-decoration: none;
-	border-radius: 7px;
-	padding-top: 15px;
-	font-size: 150%;		
+nav a { 
+    font-size: 30px;
+    line-height: 1.5;
+    text-decoration: none;
+    text-align: center;
+    color: white;
 }
 
-nav a:hover {
-	background-color: #5C5C5C
+/**MAIN */
+section{   
+    height: auto;  
+    background-color: white;
 }
-
-/* Main content Style */
-section{
-    
-    
-    /*height: 300px;*/
-}
-
 
 /*Styling for speech bubble*/
 #bubble{
     position: absolute;
     width: 100px;
     text-align: center;
-    top: 15%;
-    left: 45%;
+    top: 14%;
+    left: 43%;
 }
-  
+
+

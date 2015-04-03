@@ -1,50 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <head>        
-        <link rel="stylesheet" href="vendor/css/reset.css">
+    <head>
+        <link rel="stylesheet" type="text/css" href="vendor/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/works.css">
         <link rel="stylesheet" href="vendor/css/pure-css-speech-bubbles.css">
-        <link rel="stylesheet" href="resources/css/style.css">
-        <link rel="stylesheet" href="resources/css/works.css">
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+        <!--<script type="text/javascript" src="vendor/js/jquery-1.11.2.min.js"></script>-->
         <script type="text/javascript" src="resources/js/works.js"></script>
-        <title>My Site</title>
+        <title>Works</title>        
     </head>    
-    <body>       
-       
+    <body>
+        
+      <div class="main-container">
+        
         <header>            
-            <div id="character">
-                <div id="head">
-                    <div id="eye-left"></div><div id="eye-right"></div>
-                    <div id="mouth"></div>
-                </div>
-                <div id="torso"></div>
-                <div id="arm-left"></div>
-                <div id="arm-right"></div>
-                <div id="left-leg"></div>
-                <div id="right-leg"></div>
-            </div><!--END character-->
-            
+            <div class="banner">
+                <div id="character">
+                    <div id="head">
+                        <div id="eye-left"></div><div id="eye-right"></div>
+                        <div id="mouth"></div>
+                    </div>
+                    <div id="torso"></div>
+                    <div id="arm-left"></div>
+                    <div id="arm-right"></div>
+                    <div id="left-leg"></div>
+                    <div id="right-leg"></div>
+                </div><!--END character-->
+            </div><!--END banner-->
             <nav>
                 <ul>
                     <li><a href="index.html">About</a></li>
                     <li><a href="works.html">Works</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </nav>
+            </nav>        
         </header>
-        
-        <!--Main-->
-        <section>            
-                       
-            <div id="gallery">           
-            <a href="resources/images/Clean Energy.png" class="lightbox_trigger"><img src="resources/images/Clean Energy.png"/></a>            
-            <a href="resources/images/example2.jpg" class="lightbox_trigger"><img src="resources/images/example2.jpg"/></a>
-            <a href="resources/images/example2.jpg" class="lightbox_trigger"><img src="resources/images/example2.jpg"/></a>           
-            </div>
+
+        <!--Main Content-->
+        <section>
+            
+            <table id="gallery">
+                <tr>
+                    <td class="header"><a href="http://rawgit.com/ses10/Clean-Energy-Site-Project/master/index.html" class="gitLink">Live site Preview</a></td>
+                    <td class="header"><a href="#" class="gitLink">Live site Preview</a></td>
+                    <td class="header"><a href="#" class="gitLink">Live site Preview</a></td>
+                </tr>
+                <tr>
+                    <td><a href="resources/images/Clean Energy.png" class="lightbox_trigger"><img src="resources/images/Clean Energy.png"/></a></td>
+                    <td><a href="resources/images/Clean Energy.png" class="lightbox_trigger"><img src="resources/images/example2.jpg"/></a></td>
+                    <td><a href="resources/images/Clean Energy.png" class="lightbox_trigger"><img src="resources/images/example2.jpg"/></a></td>
+                </tr>
+            </table>
             
         </section>
-                
-       
         
+       </div><!--End Main Container-->
+        
+    <script type="text/javascript" src="resources/js/script.js"></script>
+    <script type="text/javascript" src="resources/js/speechBubble.js"></script>
     </body>
 </html>

@@ -38,22 +38,37 @@
 }
 
 /*Gallery Style*/
-
-#gallery{
-	display: inline-block;
-	margin-top: 10px;
-	padding-right: 0%;
-	padding-left: 15%;
+#gallery {
+    position: relative;
+    top: 10px;
+    height: 300px;    
+    width: 780px;
+    margin: 0 auto;
 }
 
-section img{
-        border: 1px solid black;
-	margin: 0 5px 0px 5px;
-	display: inline-block;
-	width: 25%;
-	height: 50%;
+tr, td{
+     position:relative;
 }
 
+.header {
+    height: 50px;
+    
+}
 
+#gallery .gitLink{
+    position: relative;
+    top: 15px;
+    left: 65px;
+    text-align: center;
+    color:black;
+}
 
+.lightbox_trigger, #gallery img{    
+    height: 250px;
+    width: 250px;
 
+.lightbox_trigger{
+    display: inline-block; 
+    left: 5px;
+    position: absolute;
+}
